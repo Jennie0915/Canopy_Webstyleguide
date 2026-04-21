@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typography — Canopy Style Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Gulzar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="typography.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="index.html#overview" class="nav-logo">
+          <img
+            src="Logos/Logo only Cream.png"
+            alt="Canopy logo"
+            class="nav-logo-img"
+          />
+          <span>Canopy</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#overview" class="nav-link">Overview</a></li>
+          <li><a href="logo.html" class="nav-link">Logo</a></li>
+          <li><a href="typography.html" class="nav-link active">Typography</a></li>
+          <li><a href="colors.html" class="nav-link">Color</a></li>
+
+          <li><a href="graphics.html" class="nav-link">Graphics</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- Section: Specimens -->
+      <header class="typo-header">
+        <h1 class="typo-title">Typography</h1>
+        
+        <div class="specimen-section">
+          <div class="specimen-card">
+            <div class="specimen-col serif">
+              <div class="specimen-lg">DM Serif Display</div>
+              <div class="specimen-md">DM Serif Display</div>
+              <div class="specimen-sm">DM Serif Display</div>
+            </div>
+          </div>
+
+          <div class="specimen-card">
+            <div class="specimen-col sans">
+              <div class="specimen-lg" style="font-family: var(--sans); font-weight: 700;">DM Sans</div>
+              <div class="specimen-md" style="font-family: var(--sans); font-weight: 500;">DM Sans</div>
+              <div class="specimen-sm" style="font-family: var(--sans); font-weight: 400;">DM Sans</div>
+            </div>
+          </div>
+          
+          <p class="specimen-desc">
+            DM Serif Display is a transitional serif with high-contrast strokes and subtly organic curves, giving it an editorial warmth that feels grounded rather than corporate. At headline sizes, it carries a natural, living quality that mirrors Canopy’s growth theme without sacrificing polish. Paired with DM Sans — its purpose-built companion — the two share the same proportions and rhythm, making the combination feel cohesive and considered.
+          </p>
+        </div>
+      </header>
+
+      <!-- Section: Typefaces -->
+      <section class="typefaces-section">
+        <h2 class="section-label">Typefaces</h2>
+        <div class="typeface-grid">
+          <!-- Serif Card -->
+          <div class="typeface-card">
+            <h3>DM Serif Display</h3>
+            <div class="typeface-meta">
+              <span class="meta-pill highlight">Display, Header</span>
+              <span class="meta-pill">Colophon Foundry</span>
+              <span class="meta-pill">Google Fonts</span>
+              <span class="meta-pill">Free</span>
+            </div>
+            <p>
+              A transitional serif with high-contrast strokes and organic curves. Used for headlines and hero copy — it brings warmth and presence to the moments that matter most.
+            </p>
+          </div>
+          <!-- Sans Card -->
+          <div class="typeface-card">
+            <h3 style="font-family: var(--sans); font-weight: 700;">DM Sans</h3>
+            <div class="typeface-meta">
+              <span class="meta-pill highlight">Body, UI</span>
+              <span class="meta-pill">Colophon Foundry</span>
+              <span class="meta-pill">Google Fonts</span>
+              <span class="meta-pill">Free</span>
+            </div>
+            <p>
+              A geometric sans-serif designed as DM Serif Display's companion. Used for all body text, UI labels, and data — clean, legible, and trustworthy at every size.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Type Scale -->
+      <section class="scale-section">
+        <h2 class="section-label">Type Scale</h2>
+        <div class="scale-table">
+          <div class="scale-header">
+            <div>Style</div>
+            <div style="text-align: center;">Preview</div>
+            <div style="text-align: right;">Specs</div>
+          </div>
+          
+          <!-- Display -->
+          <div class="scale-row">
+            <div class="scale-style">Display</div>
+            <div class="scale-preview" style="font-family: var(--serif); font-size: 100px; color: var(--muted-green);">Canopy</div>
+            <div class="scale-specs" style="text-align: right;">DM Serif Display 100px /<br>Regular Line height 1.1</div>
+          </div>
+          
+          <!-- H1 -->
+          <div class="scale-row">
+            <div class="scale-style">H1</div>
+            <div class="scale-preview" style="font-family: var(--serif); font-size: 60px; color: var(--pine-teal);">Canopy</div>
+            <div class="scale-specs" style="text-align: right;">DM Serif Display 60px /<br>Regular Line height 1.2</div>
+          </div>
+          
+          <!-- H2 -->
+          <div class="scale-row">
+            <div class="scale-style">H2</div>
+            <div class="scale-preview" style="font-family: var(--serif); font-size: 48px; color: var(--pine-teal);">Canopy</div>
+            <div class="scale-specs" style="text-align: right;">DM Serif Display 48px /<br>Regular Line height 1.25</div>
+          </div>
+          
+          <!-- H3 -->
+          <div class="scale-row">
+            <div class="scale-style">H3</div>
+            <div class="scale-preview" style="font-family: var(--sans); font-size: 36px; font-weight: 600; color: var(--muted-green);">Canopy</div>
+            <div class="scale-specs" style="text-align: right;">DM Sans 36px / SemiBold<br>Line height 1.3</div>
+          </div>
+          
+          <!-- H4 -->
+          <div class="scale-row">
+            <div class="scale-style">H4</div>
+            <div class="scale-preview" style="font-family: var(--sans); font-size: 32px; font-weight: 600; color: var(--deep-canopy);">Canopy</div>
+            <div class="scale-specs" style="text-align: right;">DM Sans 32px / SemiBold<br>Line height 1.4</div>
+          </div>
+
+          <!-- Body L -->
+          <div class="scale-row">
+            <div class="scale-style">Body L</div>
+            <div class="scale-preview" style="font-family: var(--sans); font-size: 30px; color: var(--pine-teal);">Canopy</div>
+            <div class="scale-specs" style="text-align: right;">DM Sans 30px / Regular<br>Line height 1.75</div>
+          </div>
+
+          <!-- Body -->
+          <div class="scale-row">
+            <div class="scale-style">Body</div>
+            <div class="scale-preview" style="font-family: var(--sans); font-size: 24px; color: var(--pine-teal);">Canopy</div>
+            <div class="scale-specs" style="text-align: right;">DM Sans 24px / Regular<br>Line height 1.75</div>
+          </div>
+
+          <!-- Label -->
+          <div class="scale-row">
+            <div class="scale-style" style="border-bottom: none;">Label</div>
+            <div class="scale-preview" style="font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--jungle-teal);">Canopy</div>
+            <div class="scale-specs" style="text-align: right; border-bottom: none;">DM Sans 13px / SemiBold<br>Line height 1.5</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: UI Application -->
+      <section class="ui-section">
+        <h2 class="section-label">UI Application</h2>
+        
+        <!-- Row: Onboarding -->
+        <div class="ui-app-grid" style="margin-bottom: 60px;">
+          <div class="ui-label">Onboarding</div>
+          <div class="ui-card">
+            <h2 style="font-size: 2.8rem; line-height: 1.1; margin-bottom: 12px; color: var(--pine-teal);">Track Your<br>Expense!</h2>
+            <p style="font-family: var(--sans); color: var(--text-secondary); margin-bottom: 10px;">See where your money goes</p>
+            <button class="ui-btn">Continue</button>
+          </div>
+          <div class="ui-card minimal">
+            <h2 style="font-size: 2rem; margin-bottom: 4px; color: var(--pine-teal);">H2</h2>
+            <p style="font-family: var(--sans); color: var(--text-muted); margin-bottom: 16px;">Body</p>
+            <button class="ui-btn">Body SemiBold font 16pt</button>
+          </div>
+        </div>
+
+        <!-- Row: Sign Up -->
+        <div class="ui-app-grid">
+          <div class="ui-label">Sign Up/Log In</div>
+          <div class="ui-card">
+            <h3 style="font-family: var(--sans); font-size: 1.8rem; font-weight: 600; color: var(--pine-teal); margin-bottom: 16px;">Create an account</h3>
+            <button class="ui-btn">Create Account</button>
+            <p class="ui-link">Already have an account? <span>Sign In</span></p>
+          </div>
+          <div class="ui-card minimal">
+            <h3 style="font-family: var(--sans); font-size: 1.4rem; font-weight: 600; color: var(--pine-teal); margin-bottom: 4px;">H3 DM Sans</h3>
+            <p style="font-family: var(--sans); color: var(--text-muted); margin-bottom: 16px;">Body SemiBold font 16pt</p>
+            <button class="ui-btn">Body SemiBold font 16pt</button>
+            <p style="font-size: 0.7rem; color: var(--text-muted); margin-top: 10px;">Body 13pt</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-logo">
+          <img src="Logos/Logo only.png" alt="Canopy Logo" class="footer-logo-img">
+          <span>Canopy</span>
+        </div>
+        <p class="footer-copy">
+          Visual Web Style Guide &copy; 2026 Canopy. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

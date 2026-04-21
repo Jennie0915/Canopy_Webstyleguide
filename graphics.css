@@ -1,0 +1,504 @@
+/* ============================================================
+   CANOPY — graphics.css
+   ============================================================ */
+
+/* ── Page Header ── */
+.graphics-page-header {
+  padding: 60px 0 48px;
+  color: var(--pine-teal);
+}
+
+/* ── Hero ── */
+.graphics-hero {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.graphics-hero-trees {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+  height: 320px;
+}
+
+.hero-tree-img {
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 24px rgba(0, 71, 56, 0.12));
+  transition: transform 0.4s var(--ease);
+  position: relative;
+}
+
+.hero-tree-img:hover {
+  transform: translateY(-8px) scale(1.04);
+  z-index: 2;
+}
+
+.hero-tree-img:nth-child(1) {
+  width: 220px;
+  margin-right: -32px;
+}
+.hero-tree-img:nth-child(2) {
+  width: 250px;
+  z-index: 1;
+}
+.hero-tree-img:nth-child(3) {
+  width: 230px;
+  margin-left: -32px;
+}
+
+.graphics-intro h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 1.2;
+  color: var(--pine-teal);
+  margin-bottom: 16px;
+}
+
+.graphics-intro p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+/* ── Section Label ── */
+.graphics-section {
+  margin-bottom: 80px;
+}
+
+.graphics-section-title {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Progression Levels ── */
+.levels-track {
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+  padding: 40px 0 0;
+  position: relative;
+}
+
+.levels-track::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--pine-teal),
+    var(--jungle-teal),
+    var(--muted-green),
+    var(--tea-green)
+  );
+  border-radius: 4px;
+}
+
+.level-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 32px;
+  position: relative;
+  cursor: default;
+  transition: transform 0.3s var(--ease);
+}
+
+.level-item:hover {
+  transform: translateY(-6px);
+}
+
+.level-item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--jungle-teal);
+  border: 3px solid var(--bg);
+}
+
+.level-item.unlocked::after {
+  background: var(--jungle-teal);
+}
+
+.level-img {
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0, 71, 56, 0.15));
+}
+
+.level-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.level-number {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.level-name {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--pine-teal);
+}
+
+.level-xp {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+/* ── Unlockable Trees Grid ── */
+.unlock-intro {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+
+.tree-unlock-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tree-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.35s var(--ease),
+    box-shadow 0.35s var(--ease);
+}
+
+.tree-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.35s var(--ease);
+  pointer-events: none;
+}
+
+.tree-card.cherry::before {
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(255, 183, 197, 0.18) 0%,
+    transparent 70%
+  );
+}
+.tree-card.maple::before {
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(239, 140, 29, 0.12) 0%,
+    transparent 70%
+  );
+}
+.tree-card.gingko::before {
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(200, 212, 32, 0.12) 0%,
+    transparent 70%
+  );
+}
+
+.tree-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.tree-card:hover::before {
+  opacity: 1;
+}
+
+.unlock-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: var(--tea-green);
+  color: var(--pine-teal);
+}
+
+.unlock-badge.rare {
+  background: var(--bright-ember);
+  color: var(--pine-teal);
+}
+
+.tree-card-img {
+  width: 160px;
+  height: 180px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 20px rgba(0, 71, 56, 0.12));
+  transition: transform 0.4s var(--ease);
+}
+
+.tree-card:hover .tree-card-img {
+  transform: scale(1.06) translateY(-4px);
+}
+
+.tree-card-info {
+  text-align: center;
+}
+
+.tree-card-name {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--pine-teal);
+  margin-bottom: 6px;
+}
+
+.tree-card-desc {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+/* ── Garden Preview ── */
+.garden-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 60px 48px;
+  margin-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.garden-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(180deg, transparent, rgba(204, 234, 157, 0.25));
+  pointer-events: none;
+}
+
+.garden-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.garden-header-text h3 {
+  font-size: 1.6rem;
+  color: var(--pine-teal);
+  margin-bottom: 8px;
+}
+
+.garden-header-text p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  max-width: 380px;
+  line-height: 1.6;
+}
+
+.garden-locked-badge {
+  background: var(--lemon-chiffon);
+  border: 1px solid var(--border);
+  border-radius: 40px;
+  padding: 8px 18px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--jungle-teal);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.garden-trees {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.garden-tree-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.garden-tree-slot img {
+  object-fit: contain;
+  filter: drop-shadow(0 6px 16px rgba(0, 71, 56, 0.12));
+  transition: transform 0.3s var(--ease);
+}
+
+.garden-tree-slot img:hover {
+  transform: translateY(-6px) scale(1.05);
+}
+
+.garden-tree-slot.locked img {
+  filter: grayscale(1) opacity(0.25);
+}
+
+.garden-slot-label {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* ── Quest Examples ── */
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.quest-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition:
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+}
+
+.quest-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.quest-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.quest-info {
+  flex: 1;
+}
+
+.quest-name {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--pine-teal);
+  margin-bottom: 4px;
+}
+
+.quest-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.quest-progress-bar {
+  height: 6px;
+  background: var(--bg);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.quest-progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--jungle-teal), var(--muted-green));
+}
+
+.quest-reward {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.quest-reward img {
+  width: 40px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.quest-reward-label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .graphics-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .graphics-hero-trees {
+    order: -1;
+  }
+
+  .tree-unlock-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .levels-track {
+    gap: 0;
+  }
+}

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canopy – Visual Web Style Guide</title>
+    <meta
+      name="description"
+      content="Canopy Visual Web Style Guide – Colors, Typography, Iconography, and Brand Guidelines for the Canopy personal finance app."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Gulzar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ─── NAV ─────────────────────────────────────────────────── -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#overview" class="nav-logo" id="nav-logo-link">
+          <img
+            src="Logos/Logo only Cream.png"
+            alt="Canopy logo"
+            class="nav-logo-img"
+          />
+          <span>Canopy</span>
+        </a>
+        <ul class="nav-links">
+          <li>
+            <a href="#overview" class="nav-link" data-section="overview"
+              >Overview</a
+            >
+          </li>
+          <li><a href="logo.html" class="nav-link" data-section="logo">Logo</a></li>
+          <li><a href="typography.html" class="nav-link" data-section="typography">Typography</a></li>
+          <li><a href="colors.html" class="nav-link" data-section="colors">Color</a></li>
+          <li>
+
+          <li><a href="graphics.html" class="nav-link" data-section="graphics">Graphics</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#overview" class="mobile-link" data-section="overview"
+        >Overview</a
+      >
+      <a href="logo.html" class="mobile-link" data-section="logo">Logo</a>
+      <a href="typography.html" class="mobile-link" data-section="typography"
+        >Typography</a
+      >
+
+      <a href="#graphics" class="mobile-link" data-section="graphics"
+        >Graphics</a
+      >
+    </div>
+
+    <main>
+      <!-- ─── OVERVIEW / HERO ──────────────────────────────────────── -->
+      <section id="overview" class="section hero-section">
+        <div class="container hero-grid">
+          <!-- Tree Illustration -->
+          <div class="hero-tree" aria-hidden="true">
+            <img
+              src="Trees/Tree.png"
+              alt="Canopy watercolor tree illustration"
+              class="tree-svg"
+            />
+          </div>
+
+          <!-- Hero text -->
+          <div class="hero-text">
+            <h1 class="hero-title">Visual Web<br />Style Guide</h1>
+            <p class="hero-body">
+              <strong>Canopy</strong> is a personal finance app named after the
+              highest layer of the forest, where trees that grew with intention
+              finally reach the light. Because financial health works the same
+              way: it starts with small, deliberate choices about where you
+              spend and what you save, and compounds into something you're proud
+              of over time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Overview sub-sections ── -->
+      <div class="container overview-grid">
+          <!-- Logo Card -->
+          <div class="card" id="logo">
+            <h2 class="card-title">Logo and Identity</h2>
+            <div class="card-body logo-preview">
+              <div class="logo-box">
+                <img
+                  src="Logos/Logo only.png"
+                  alt="Canopy logo"
+                  class="logo-img"
+                />
+              </div>
+              <div class="logo-variants">
+                <div class="logo-variant dark">
+                  <img
+                    src="Logos/Logo only Cream.png"
+                    alt="Canopy logo"
+                    class="logo-img"
+                  />
+                </div>
+                <div class="logo-variant light">
+                  <img
+                    src="Logos/Logo only Greyscale.png"
+                    alt="Canopy logo"
+                    class="logo-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Typography Card -->
+          <div class="card" id="typography">
+            <h2 class="card-title">Typography</h2>
+            <div class="card-body type-grid">
+              <div class="type-col serif">
+                <span class="type-label-lg serif">DM Serif Display</span>
+                <span class="type-label-md serif">DM Serif Display</span>
+                <span class="type-label-sm serif">DM Serif Display</span>
+              </div>
+              <div class="type-col sans">
+                <span class="type-label-lg sans">DM Sans</span>
+                <span class="type-label-md sans">DM Sans</span>
+                <span class="type-label-sm sans">DM Sans</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colors Card -->
+          <div class="card" id="colors">
+            <h2 class="card-title">Colors</h2>
+            <div class="card-body colors-row">
+              <div
+                class="color-swatch"
+                style="background: #fffbd3"
+                data-name="Canopy Cream"
+                data-hex="#FFFBD3"
+              ></div>
+              <div
+                class="color-swatch"
+                style="background: #8dab59"
+                data-name="Forest Green"
+                data-hex="#8DAB59"
+              ></div>
+              <div
+                class="color-swatch"
+                style="background: #ccea9d"
+                data-name="Leaf Light"
+                data-hex="#CCEA9D"
+              ></div>
+              <div
+                class="color-swatch"
+                style="background: #efc71d"
+                data-name="Sun Yellow"
+                data-hex="#EFC71D"
+              ></div>
+              <div
+                class="color-swatch"
+                style="background: #2e8d6f"
+                data-name="Deep Teal"
+                data-hex="#2E8D6F"
+              ></div>
+              <div
+                class="color-swatch"
+                style="background: #004738"
+                data-name="Dark Canopy"
+                data-hex="#004738"
+              ></div>
+            </div>
+            <div class="color-tooltip" id="color-tooltip"></div>
+          </div>
+
+          <!-- Iconography Card -->
+          <div class="card" id="iconography">
+            <h2 class="card-title">Iconography</h2>
+            <div class="card-body icons-grid">
+              <!-- Row 1: outline vs filled -->
+              <div class="icon-pair">
+                <img
+                  src="Icons/fi-rr-signal-alt.png"
+                  alt="Icon 1"
+                  class="icon outline"
+                />
+                <img
+                  src="Icons/fi-sr-signal-alt-2.png"
+                  alt="Icon 1"
+                  class="icon filled"
+                />
+              </div>
+              <div class="icon-pair">
+                <img
+                  src="Icons/fi-rr-trophy.png"
+                  alt="Icon 1"
+                  class="icon outline"
+                />
+                <img
+                  src="Icons/fi-sr-trophy.png"
+                  alt="Icon 1"
+                  class="icon filled"
+                />
+              </div>
+              <div class="icon-pair">
+                <img
+                  src="Icons/fi-rr-home.png"
+                  alt="Icon 1"
+                  class="icon outline"
+                />
+                <img
+                  src="Icons/fi-sr-home.png"
+                  alt="Icon 1"
+                  class="icon filled"
+                />
+              </div>
+              <div class="icon-pair">
+                <img
+                  src="Icons/fi-rr-user.png"
+                  alt="Icon 1"
+                  class="icon outline"
+                />
+                <img
+                  src="Icons/fi-sr-user.png"
+                  alt="Icon 1"
+                  class="icon filled"
+                />
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Graphics Card -->
+          <div class="card wide-card" id="graphics">
+            <h2 class="card-title">Graphics</h2>
+            <div class="card-body graphics-row">
+              <!-- Full grown tree -->
+              <div class="graphic-item" data-label="Full grown tree">
+                <img
+                  src="Trees/Tree.png"
+                  alt="Tree graphic"
+                  class="graphic-img"
+                />
+                <span class="graphic-label">Full grown tree</span>
+              </div>
+
+              <!-- Cherry Blossom -->
+              <div class="graphic-item" data-label="Cherry Blossom">
+                <img
+                  src="Trees/Cherry Blossom.png"
+                  alt="Cherry Blossom graphic"
+                  class="graphic-img"
+                />
+                <span class="graphic-label">Cherry Blossom Tree</span>
+              </div>
+
+              <!-- Maple tree -->
+              <div class="graphic-item" data-label="Maple">
+                <img
+                  src="Trees/Maple Tree.png"
+                  alt="Maple tree graphic"
+                  class="graphic-img"
+                />
+                <span class="graphic-label">Maple Tree</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ─── FOOTER ──────────────────────────────────────────────── -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-logo">
+          <img src="Logos/Logo only.png" alt="Canopy Logo" class="footer-logo-img">
+          <span>Canopy</span>
+        </div>
+        <p class="footer-copy">
+          Visual Web Style Guide &copy; 2026 Canopy. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

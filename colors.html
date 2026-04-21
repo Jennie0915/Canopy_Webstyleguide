@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color — Canopy Style Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="colors.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="index.html#overview" class="nav-logo">
+          <img
+            src="Logos/Logo only Cream.png"
+            alt="Canopy logo"
+            class="nav-logo-img"
+          />
+          <span>Canopy</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#overview" class="nav-link">Overview</a></li>
+          <li><a href="logo.html" class="nav-link">Logo</a></li>
+          <li><a href="typography.html" class="nav-link">Typography</a></li>
+          <li><a href="colors.html" class="nav-link active">Color</a></li>
+          <li><a href="index.html#graphics" class="nav-link">Graphics</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- ── Hero ── -->
+      <header class="colors-page-header">
+        <div class="colors-hero">
+          <div class="colors-intro">
+            <h1 style="font-size: 2.4rem; margin-bottom: 16px">Color</h1>
+            <p>
+              <strong>Canopy's</strong> palette is drawn from the forest floor
+              to the canopy ceiling. Each color has a defined role — from the
+              deep stability of pine and teal to the light warmth of lemon
+              chiffon. Together, they create a system that feels grounded,
+              natural, and full of life.
+            </p>
+          </div>
+
+          <!-- Palette Flags -->
+          <div class="palette-flags">
+            <div class="palette-flag-wrap">
+              <div class="palette-flag" style="background: #004738"></div>
+              <div class="flag-label">
+                <span class="flag-hex">#004738</span>
+                <span class="flag-name">Pine Teal</span>
+              </div>
+            </div>
+            <div class="palette-flag-wrap">
+              <div class="palette-flag" style="background: #2e8d6f"></div>
+              <div class="flag-label">
+                <span class="flag-hex">#2E8D6F</span>
+                <span class="flag-name">Jungle Teal</span>
+              </div>
+            </div>
+            <div class="palette-flag-wrap">
+              <div class="palette-flag" style="background: #8dab59"></div>
+              <div class="flag-label">
+                <span class="flag-hex">#8DAB59</span>
+                <span class="flag-name">Muted Green</span>
+              </div>
+            </div>
+            <div class="palette-flag-wrap">
+              <div class="palette-flag" style="background: #ccea9d"></div>
+              <div class="flag-label">
+                <span class="flag-hex">#CCEA9D</span>
+                <span class="flag-name">Tea Green</span>
+              </div>
+            </div>
+            <div class="palette-flag-wrap">
+              <div class="palette-flag" style="background: #efc71d"></div>
+              <div class="flag-label">
+                <span class="flag-hex">#EFC71D</span>
+                <span class="flag-name">Bright Ember</span>
+              </div>
+            </div>
+            <div class="palette-flag-wrap">
+              <div
+                class="palette-flag"
+                style="background: #fffbd3; border: 1px solid #e0ead0"
+              ></div>
+              <div class="flag-label">
+                <span class="flag-hex">#FFFBD3</span>
+                <span class="flag-name">Lemon Chiffon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ── Primary Palette ── -->
+      <section class="color-section">
+        <h2 class="color-section-title">Primary Palette</h2>
+        <div class="color-details-grid">
+          <!-- Pine Teal -->
+          <div class="color-detail-card">
+            <div class="color-swatch-lg" style="background: #004738">
+              <span class="color-copy-tag" style="color: #ccea9d">#004738</span>
+            </div>
+            <div class="color-detail-info">
+              <div class="color-detail-name">Pine Teal</div>
+              <div class="color-detail-hex">#004738</div>
+              <div class="color-detail-values">
+                <span class="color-value-pill">R 0 G 71 B 56</span>
+                <span class="color-value-pill">HSL 165° 100% 14%</span>
+              </div>
+              <p class="color-detail-role">
+                The foundation of the brand. Used for navbars, primary headings,
+                and strong UI elements. Evokes the stability of deep forest
+                roots.
+              </p>
+            </div>
+          </div>
+
+          <!-- Jungle Teal -->
+          <div class="color-detail-card">
+            <div class="color-swatch-lg" style="background: #2e8d6f">
+              <span class="color-copy-tag" style="color: #fffbd3">#2E8D6F</span>
+            </div>
+            <div class="color-detail-info">
+              <div class="color-detail-name">Jungle Teal</div>
+              <div class="color-detail-hex">#2E8D6F</div>
+              <div class="color-detail-values">
+                <span class="color-value-pill">R 46 G 141 B 111</span>
+                <span class="color-value-pill">HSL 161° 51% 37%</span>
+              </div>
+              <p class="color-detail-role">
+                The primary interactive color. Used for buttons, links, icons,
+                and highlighted UI elements. Rich but approachable.
+              </p>
+            </div>
+          </div>
+
+          <!-- Muted Green -->
+          <div class="color-detail-card">
+            <div class="color-swatch-lg" style="background: #8dab59">
+              <span class="color-copy-tag" style="color: #fff">#8DAB59</span>
+            </div>
+            <div class="color-detail-info">
+              <div class="color-detail-name">Muted Green</div>
+              <div class="color-detail-hex">#8DAB59</div>
+              <div class="color-detail-values">
+                <span class="color-value-pill">R 141 G 171 B 89</span>
+                <span class="color-value-pill">HSL 88° 32% 51%</span>
+              </div>
+              <p class="color-detail-role">
+                Used for accent text, chart fills, and secondary visual signals.
+                Midpoint between forest and foliage — earthy and optimistic.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tea Green -->
+          <div class="color-detail-card">
+            <div class="color-swatch-lg" style="background: #ccea9d">
+              <span class="color-copy-tag" style="color: #004738">#CCEA9D</span>
+            </div>
+            <div class="color-detail-info">
+              <div class="color-detail-name">Tea Green</div>
+              <div class="color-detail-hex">#CCEA9D</div>
+              <div class="color-detail-values">
+                <span class="color-value-pill">R 204 G 234 B 157</span>
+                <span class="color-value-pill">HSL 88° 62% 77%</span>
+              </div>
+              <p class="color-detail-role">
+                Light fill for badges, tags, and positive states. Represents new
+                growth and budding potential — gentle and encouraging.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bright Ember -->
+          <div class="color-detail-card">
+            <div class="color-swatch-lg" style="background: #efc71d">
+              <span class="color-copy-tag" style="color: #004738">#EFC71D</span>
+            </div>
+            <div class="color-detail-info">
+              <div class="color-detail-name">Bright Ember</div>
+              <div class="color-detail-hex">#EFC71D</div>
+              <div class="color-detail-values">
+                <span class="color-value-pill">R 239 G 199 B 29</span>
+                <span class="color-value-pill">HSL 49° 86% 53%</span>
+              </div>
+              <p class="color-detail-role">
+                The accent and attention color. Used for callouts, alerts, and
+                financial highlights. A warm sunlight that cuts through the
+                canopy.
+              </p>
+            </div>
+          </div>
+
+          <!-- Lemon Chiffon -->
+          <div class="color-detail-card">
+            <div
+              class="color-swatch-lg"
+              style="background: #fffbd3; border-bottom: 1px solid #e0ead0"
+            >
+              <span
+                class="color-copy-tag"
+                style="color: #004738; background: rgba(0, 0, 0, 0.06)"
+                >#FFFBD3</span
+              >
+            </div>
+            <div class="color-detail-info">
+              <div class="color-detail-name">Lemon Chiffon</div>
+              <div class="color-detail-hex">#FFFBD3</div>
+              <div class="color-detail-values">
+                <span class="color-value-pill">R 255 G 251 B 211</span>
+                <span class="color-value-pill">HSL 52° 100% 91%</span>
+              </div>
+              <p class="color-detail-role">
+                The softest tone in the system. Used for page backgrounds, card
+                fills, and logo on dark surfaces. Warm, airy, and calm.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Tints ── -->
+      <section class="color-section">
+        <h2 class="color-section-title">Tints</h2>
+        <div class="tints-grid">
+          <!-- Pine Teal Tints -->
+          <div class="tint-row-card">
+            <div class="tint-row-label">Pine Teal · #004738</div>
+            <div class="tint-strips">
+              <div
+                class="tint-strip"
+                style="background: rgba(0, 71, 56, 1); color: #ccea9d"
+              >
+                100
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(0, 71, 56, 0.8); color: #ccea9d"
+              >
+                80
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(0, 71, 56, 0.6); color: #fff"
+              >
+                60
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(0, 71, 56, 0.4); color: #004738"
+              >
+                40
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(0, 71, 56, 0.2); color: #004738"
+              >
+                20
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(0, 71, 56, 0.08); color: #004738"
+              >
+                8
+              </div>
+            </div>
+          </div>
+
+          <!-- Jungle Teal Tints -->
+          <div class="tint-row-card">
+            <div class="tint-row-label">Jungle Teal · #2E8D6F</div>
+            <div class="tint-strips">
+              <div
+                class="tint-strip"
+                style="background: rgba(46, 141, 111, 1); color: #fffbd3"
+              >
+                100
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(46, 141, 111, 0.8); color: #fffbd3"
+              >
+                80
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(46, 141, 111, 0.6); color: #fff"
+              >
+                60
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(46, 141, 111, 0.4); color: #004738"
+              >
+                40
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(46, 141, 111, 0.2); color: #004738"
+              >
+                20
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(46, 141, 111, 0.08); color: #2e8d6f"
+              >
+                8
+              </div>
+            </div>
+          </div>
+
+          <!-- Muted Green Tints -->
+          <div class="tint-row-card">
+            <div class="tint-row-label">Muted Green · #8DAB59</div>
+            <div class="tint-strips">
+              <div
+                class="tint-strip"
+                style="background: rgba(141, 171, 89, 1); color: #fff"
+              >
+                100
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(141, 171, 89, 0.8); color: #fff"
+              >
+                80
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(141, 171, 89, 0.6); color: #004738"
+              >
+                60
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(141, 171, 89, 0.4); color: #004738"
+              >
+                40
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(141, 171, 89, 0.2); color: #004738"
+              >
+                20
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(141, 171, 89, 0.08); color: #8dab59"
+              >
+                8
+              </div>
+            </div>
+          </div>
+
+          <!-- Bright Ember Tints -->
+          <div class="tint-row-card">
+            <div class="tint-row-label">Bright Ember · #EFC71D</div>
+            <div class="tint-strips">
+              <div
+                class="tint-strip"
+                style="background: rgba(239, 199, 29, 1); color: #004738"
+              >
+                100
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(239, 199, 29, 0.8); color: #004738"
+              >
+                80
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(239, 199, 29, 0.6); color: #004738"
+              >
+                60
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(239, 199, 29, 0.4); color: #004738"
+              >
+                40
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(239, 199, 29, 0.2); color: #004738"
+              >
+                20
+              </div>
+              <div
+                class="tint-strip"
+                style="background: rgba(239, 199, 29, 0.08); color: #b89300"
+              >
+                8
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── UI Application ── -->
+      <section class="color-section">
+        <h2 class="color-section-title">Color in UI — Application</h2>
+        <div class="ui-color-grid">
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <div class="ui-screen-placeholder">
+              <img
+                src="Imagery/Loading.png"
+                alt="Onboarding Example"
+                class="ui-screen-img"
+              />
+            </div>
+            <div class="ui-screen-caption">
+              Onboarding · Tea Green + Jungle Teal Background
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <div class="ui-screen-placeholder">
+              <img
+                src="Imagery/Dash_NewUser_NoGoalSet.png"
+                alt="Dashboard Example"
+                class="ui-screen-img"
+              />
+            </div>
+            <div class="ui-screen-caption">
+              Dashboard · Pine Teal + Jungle Teal + Lemon Chiffon + Muted Green
+              + Bright Ember
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <div class="ui-screen-placeholder">
+              <img
+                src="Imagery/Expense_Weekly.png"
+                alt="Transaction Example"
+                class="ui-screen-img"
+              />
+            </div>
+            <div class="ui-screen-caption">
+              Expenses · Pine Teal + Jungle Teal + Lemon Chiffon + Muted Green +
+              Bright Ember
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Accessibility ── -->
+      <section class="color-section" style="margin-bottom: 120px">
+        <h2 class="color-section-title">Accessibility · Contrast Ratios</h2>
+        <div class="accessibility-grid">
+          <div class="contrast-card">
+            <div class="contrast-swatch-pair" style="background: #004738">
+              <span
+                style="
+                  font-family: var(--serif);
+                  font-size: 1.6rem;
+                  color: #fffbd3;
+                "
+                >Aa</span
+              >
+            </div>
+            <div class="contrast-info">
+              <div class="contrast-ratio">12.6:1</div>
+              <div class="contrast-label">Pine Teal on Lemon Chiffon</div>
+              <span class="contrast-badge badge-aaa">AAA Pass</span>
+            </div>
+          </div>
+
+          <div class="contrast-card">
+            <div class="contrast-swatch-pair" style="background: #2e8d6f">
+              <span
+                style="
+                  font-family: var(--serif);
+                  font-size: 1.6rem;
+                  color: #fff;
+                "
+                >Aa</span
+              >
+            </div>
+            <div class="contrast-info">
+              <div class="contrast-ratio">4.8:1</div>
+              <div class="contrast-label">Jungle Teal on White</div>
+              <span class="contrast-badge badge-aa">AA Pass</span>
+            </div>
+          </div>
+
+          <div class="contrast-card">
+            <div class="contrast-swatch-pair" style="background: #efc71d">
+              <span
+                style="
+                  font-family: var(--serif);
+                  font-size: 1.6rem;
+                  color: #004738;
+                "
+                >Aa</span
+              >
+            </div>
+            <div class="contrast-info">
+              <div class="contrast-ratio">7.2:1</div>
+              <div class="contrast-label">Dark text on Bright Ember</div>
+              <span class="contrast-badge badge-aaa">AAA Pass</span>
+            </div>
+          </div>
+
+          <div class="contrast-card">
+            <div class="contrast-swatch-pair" style="background: #f7f9f2">
+              <span
+                style="
+                  font-family: var(--serif);
+                  font-size: 1.6rem;
+                  color: #004738;
+                "
+                >Aa</span
+              >
+            </div>
+            <div class="contrast-info">
+              <div class="contrast-ratio">11.4:1</div>
+              <div class="contrast-label">Pine Teal on Page Background</div>
+              <span class="contrast-badge badge-aaa">AAA Pass</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-logo">
+          <img
+            src="Logos/Logo only.png"
+            alt="Canopy Logo"
+            class="footer-logo-img"
+          />
+          <span>Canopy</span>
+        </div>
+        <p class="footer-copy">
+          Visual Web Style Guide &copy; 2026 Canopy. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      function loadImage(event, imgId) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          const img = document.getElementById(imgId);
+          img.src = e.target.result;
+          img.style.display = "block";
+          img.style.objectFit = "cover";
+          img.style.width = "100%";
+          img.style.height = "100%";
+          // Hide the label
+          img.parentElement.querySelector("label").style.display = "none";
+        };
+        reader.readAsDataURL(file);
+      }
+    </script>
+  </body>
+</html>

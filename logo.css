@@ -1,0 +1,175 @@
+/* ============================================================
+   CANOPY — logo.css
+   ============================================================ */
+
+.logo-page-header {
+  padding: 60px 0 40px;
+  color: var(--pine-teal);
+}
+
+.logo-hero {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 70px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.logo-hero-img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0, 71, 56, 0.15));
+}
+
+.logo-intro {
+  max-width: 600px;
+}
+
+.logo-intro p {
+  font-size: 1.12rem;
+  line-height: 1.72;
+  color: var(--text-secondary);
+}
+
+.logo-intro strong {
+  color: var(--pine-teal);
+  font-weight: 600;
+}
+
+.logo-section {
+  margin-bottom: 80px;
+}
+
+.logo-section-title {
+  font-size: 1.8rem;
+  margin-bottom: 32px;
+}
+
+/* ── Display Grids ── */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.logo-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logo-grid.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.logo-grid.bw-grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+/* ── Logo Card ── */
+.logo-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  position: relative;
+  transition:
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+}
+
+.logo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.logo-card.dark {
+  background: #000;
+  border-color: #333;
+}
+
+.logo-card.mono {
+  background: var(--jungle-teal);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo-card.cream {
+  background: var(--lemon-chiffon);
+  border-color: var(--border);
+}
+
+/* ── Clear Space ── */
+.clear-space-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.clear-space-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.clear-space-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ── Shared Lockup Styles ── */
+.lockup-h {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lockup-v {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-text {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  color: var(--pine-teal);
+}
+
+.logo-tag {
+  margin-top: 16px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Responsiveness ── */
+@media (max-width: 900px) {
+  .logo-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .logo-hero-img {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
+}

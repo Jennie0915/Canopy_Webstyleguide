@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphics — Canopy Style Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="graphics.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="index.html#overview" class="nav-logo">
+          <img src="Logos/Logo only Cream.png" alt="Canopy logo" class="nav-logo-img" />
+          <span>Canopy</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#overview" class="nav-link">Overview</a></li>
+          <li><a href="logo.html" class="nav-link">Logo</a></li>
+          <li><a href="typography.html" class="nav-link">Typography</a></li>
+          <li><a href="colors.html" class="nav-link">Color</a></li>
+          <li><a href="graphics.html" class="nav-link active">Graphics</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main class="container">
+
+      <!-- ── Hero ── -->
+      <header class="graphics-page-header">
+        <h1 style="font-size: 2.4rem; margin-bottom: 32px;">Graphics</h1>
+
+        <div class="graphics-hero">
+          <div class="graphics-hero-trees">
+            <img src="Trees/Cherry Blossom.png" alt="Cherry Blossom tree" class="hero-tree-img" />
+            <img src="Trees/Tree.png" alt="Green tree" class="hero-tree-img" />
+            <img src="Trees/Maple Tree.png" alt="Maple tree" class="hero-tree-img" />
+          </div>
+
+          <div class="graphics-intro">
+            <p>
+              <strong>Canopy's</strong> graphics use watercolor hand-drawn illustration to bring the gamification system to life. Users progress through five quest levels tied to their spending habits and financial goals. Reaching level five unlocks a unique colored tree, randomized as a reward, which is then stored in their personal garden. The watercolor style was chosen because it feels organic and alive — much like the process of building healthy financial habits itself.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- ── Level Progression ── -->
+      <section class="graphics-section">
+        <h2 class="graphics-section-title">Growth Levels — Quest Progression</h2>
+
+        <div class="levels-track">
+          <!-- Level 1: Seed -->
+          <div class="level-item">
+            <img src="Trees/Seed.png" alt="Seed — Level 1" class="level-img" style="width:60px; height:72px;" />
+            <div class="level-badge">
+              <span class="level-number">Level 1</span>
+              <span class="level-name">Seed</span>
+            </div>
+          </div>
+
+          <!-- Level 2: Sprout -->
+          <div class="level-item">
+            <img src="Trees/Sprout.png" alt="Sprout — Level 2" class="level-img" style="width:80px; height:90px;" />
+            <div class="level-badge">
+              <span class="level-number">Level 2</span>
+              <span class="level-name">Sprout</span>
+            </div>
+          </div>
+
+          <!-- Level 3: Sapling -->
+          <div class="level-item">
+            <img src="Trees/lv2 sprout.png" alt="Sapling — Level 3" class="level-img" style="width:90px; height:110px;" />
+            <div class="level-badge">
+              <span class="level-number">Level 3</span>
+              <span class="level-name">Sapling</span>
+            </div>
+          </div>
+
+          <!-- Level 4: Young Tree -->
+          <div class="level-item">
+            <img src="Trees/small tree.png" alt="Young Tree — Level 4" class="level-img" style="width:110px; height:130px;" />
+            <div class="level-badge">
+              <span class="level-number">Level 4</span>
+              <span class="level-name">Young Tree</span>
+            </div>
+          </div>
+
+          <!-- Level 5: Full Tree -->
+          <div class="level-item unlocked">
+            <img src="Trees/mid tree.png" alt="Full Tree — Level 5" class="level-img" style="width:140px; height:160px;" />
+            <div class="level-badge">
+              <span class="level-number">Level 5</span>
+              <span class="level-name" style="color:var(--jungle-teal); font-weight:700; margin-top: 4px;">UNLOCK ✦</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Unlockable Trees ── -->
+      <section class="graphics-section">
+        <h2 class="graphics-section-title">Unlockable Trees — Reward Collection</h2>
+        <p class="unlock-intro">
+          Upon reaching Level 5, users unlock one randomly assigned watercolor tree, which is added to their personal garden. Each tree has a unique species and rarity. The collection encourages continued engagement — there's always something new to discover.
+        </p>
+
+        <div class="tree-unlock-grid">
+
+          <!-- Cherry Blossom -->
+          <div class="tree-card cherry">
+            <span class="unlock-badge rare">Rare</span>
+            <img src="Trees/Cherry Blossom.png" alt="Cherry Blossom" class="tree-card-img" />
+            <div class="tree-card-info">
+              <div class="tree-card-name">Cherry Blossom</div>
+              <div class="tree-card-desc">
+                A fleeting bloom that arrives with intention. Symbolizes milestones that took patience and perseverance to reach.
+              </div>
+            </div>
+          </div>
+
+          <!-- Maple Tree -->
+          <div class="tree-card maple">
+            <span class="unlock-badge">Common</span>
+            <img src="Trees/Maple Tree.png" alt="Maple Tree" class="tree-card-img" />
+            <div class="tree-card-info">
+              <div class="tree-card-name">Maple Tree</div>
+              <div class="tree-card-desc">
+                Warm and generous, the maple reflects seasons of change. Earned by users who consistently track their spending.
+              </div>
+            </div>
+          </div>
+
+          <!-- Gingko Tree -->
+          <div class="tree-card gingko">
+            <span class="unlock-badge rare">Rare</span>
+            <img src="Trees/Gingko tree.png" alt="Gingko Tree" class="tree-card-img" />
+            <div class="tree-card-info">
+              <div class="tree-card-name">Ginkgo Tree</div>
+              <div class="tree-card-desc">
+                Ancient and resilient, the ginkgo stands for endurance. Unlocked by completing long-term savings goals.
+              </div>
+            </div>
+          </div>
+
+          <!-- Green Tree -->
+          <div class="tree-card" style="grid-column: span 1;">
+            <span class="unlock-badge">Common</span>
+            <img src="Trees/Tree.png" alt="Green Tree" class="tree-card-img" />
+            <div class="tree-card-info">
+              <div class="tree-card-name">Evergreen Tree</div>
+              <div class="tree-card-desc">
+                Steady and full of life. The most familiar tree in the collection — earned by completing your first savings goal.
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Small Tree (locked placeholder) -->
+          <div class="tree-card" style="background: var(--bg); border-style: dashed; align-items: center; justify-content: center; min-height: 360px; gap: 12px;">
+            <div style="width:80px;height:80px;border-radius:50%;background:var(--surface);border:2px dashed var(--border);display:flex;align-items:center;justify-content:center;">
+              <svg width="32" height="32" fill="none" stroke="var(--border)" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M12 2a5 5 0 015 5v3H7V7a5 5 0 015-5z" stroke-linecap="round"/><rect x="3" y="10" width="18" height="11" rx="2"/>
+              </svg>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-family:var(--sans);font-weight:600;font-size:0.9rem;color:var(--text-muted);margin-bottom:4px;">Mystery Tree</div>
+              <div style="font-size:0.78rem;color:var(--border);font-weight:500;">Coming soon</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── Garden Preview ── -->
+      <section class="graphics-section">
+        <h2 class="graphics-section-title">The Garden — Your Tree Collection</h2>
+        <div class="garden-section">
+          <div class="garden-header">
+            <div class="garden-header-text">
+              <h3>My Garden</h3>
+              <p>Every tree you've earned lives here. Each one represents a quest completed, a goal reached, a habit built. Your garden grows with you.</p>
+            </div>
+            <div class="garden-locked-badge">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4" stroke-linecap="round"/>
+              </svg>
+              Unlocked at Level 5
+            </div>
+          </div>
+
+          <div class="garden-trees">
+            <div class="garden-tree-slot">
+              <img src="Trees/Cherry Blossom.png" alt="Cherry Blossom" style="width:140px;" />
+              <span class="garden-slot-label">Cherry Blossom</span>
+            </div>
+            <div class="garden-tree-slot">
+              <img src="Trees/Tree.png" alt="Evergreen" style="width:160px;" />
+              <span class="garden-slot-label">Evergreen</span>
+            </div>
+            <div class="garden-tree-slot">
+              <img src="Trees/Maple Tree.png" alt="Maple" style="width:150px;" />
+              <span class="garden-slot-label">Maple</span>
+            </div>
+            <div class="garden-tree-slot locked">
+              <img src="Trees/Gingko tree.png" alt="Ginkgo — locked" style="width:140px;" />
+              <span class="garden-slot-label">Locked</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Quest Examples ── -->
+      <section class="graphics-section" style="margin-bottom: 120px;">
+        <h2 class="graphics-section-title">Quest Examples — How You Earn XP</h2>
+        <div class="quest-grid">
+
+          <div class="quest-card">
+            <div class="quest-icon">📱</div>
+            <div class="quest-info">
+              <div class="quest-name">Daily Habit</div>
+              <div class="quest-desc">Open the app 5 days in a row to build your financial frequency.</div>
+              <div class="quest-progress-bar">
+                <div class="quest-progress-fill" style="width:80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quest-card">
+            <div class="quest-icon">📒</div>
+            <div class="quest-info">
+              <div class="quest-name">Weekly Logger</div>
+              <div class="quest-desc">Log expenses 3 times within a single week.</div>
+              <div class="quest-progress-bar">
+                <div class="quest-progress-fill" style="width:66%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quest-card">
+            <div class="quest-icon">🎯</div>
+            <div class="quest-info">
+              <div class="quest-name">Goal Setter</div>
+              <div class="quest-desc">Create a savings goal (e.g. Japan trip — $3,000).</div>
+              <div class="quest-progress-bar">
+                <div class="quest-progress-fill" style="width:100%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quest-card">
+            <div class="quest-icon">🏆</div>
+            <div class="quest-info">
+              <div class="quest-name">Goal Achieved</div>
+              <div class="quest-desc">Reach 100% of a savings goal you've set.</div>
+              <div class="quest-progress-bar">
+                <div class="quest-progress-fill" style="width:38%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-logo">
+          <img src="Logos/Logo only.png" alt="Canopy Logo" class="footer-logo-img">
+          <span>Canopy</span>
+        </div>
+        <p class="footer-copy">
+          Visual Web Style Guide &copy; 2026 Canopy. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
