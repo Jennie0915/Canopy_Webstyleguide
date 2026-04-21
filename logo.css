@@ -142,9 +142,12 @@
 }
 
 .brand-text {
-  font-family: var(--serif);
+  font-family: 'Gulzar', serif;
   font-size: 2.2rem;
   color: var(--pine-teal);
+  line-height: 1.1;
+  transform: translateY(4px); /* Final optical alignment for Gulzar font */
+  display: inline-block;
 }
 
 .logo-tag {
@@ -171,5 +174,108 @@
 
   .logo-grid {
     grid-template-columns: 1fr;
+  }
+}
+/* ── Symbol Section Redesign ── */
+.symbol-main-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.symbol-card-large {
+  background: #f4f9f4; /* Very light green background */
+  border: 1.5px solid var(--jungle-teal); /* Green border */
+  border-radius: var(--radius);
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.symbol-card-large img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+.symbol-variations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.symbol-card.mini {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.symbol-card.mini img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+}
+
+/* Specific Variation Styles */
+.symbol-card.bw-1 {
+  background: #ffffff;
+  border-color: rgba(46, 141, 111, 0.4); /* Subtle green border */
+}
+
+.symbol-card.bw-1 img {
+  filter: grayscale(1) brightness(0); /* Black logo */
+}
+
+.symbol-card.bw-2 {
+  background: #000000;
+  border: none;
+}
+
+.symbol-card.bw-2 img {
+  filter: brightness(0) invert(1); /* White logo */
+}
+
+.symbol-card.grey {
+  background: #ffffff;
+  border-color: rgba(46, 141, 111, 0.4);
+}
+
+.symbol-card.grey img {
+  filter: none; /* Preserves multi-tone greyscale detail */
+}
+
+.symbol-card.mono-symbol {
+  background: var(--jungle-teal); /* Dark green bg */
+  border: none;
+}
+
+/* Responsiveness for Symbol Section */
+@media (max-width: 900px) {
+  .symbol-main-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .symbol-card-large {
+    min-height: 300px;
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .symbol-variations-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .symbol-card.mini {
+    aspect-ratio: 2 / 1;
   }
 }
