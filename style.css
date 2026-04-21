@@ -297,6 +297,10 @@ ul {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: block;
   transition:
     box-shadow 0.3s var(--ease),
     transform 0.3s var(--ease);
